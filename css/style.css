@@ -1,0 +1,40 @@
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
+
+:root {
+  --color-border: rgb(210, 210, 219);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.block {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: none;
+  z-index: 9999;
+}
+
+@media screen and (min-width: 500px) {
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+  }
+}
